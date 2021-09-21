@@ -35,8 +35,4 @@
   <ItemGroup>
     <ProjectReference Include="..\ModbusTCP\ModbusTCP.csproj" />
   </ItemGroup>
-  <PropertyGroup />
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Windows.Compatibility" Version="5.0.2" />
-  </ItemGroup>
 </Project>
