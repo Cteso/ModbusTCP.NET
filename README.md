@@ -11,7 +11,7 @@ be used in any other language.
 
 This repository also contains a sample winforms app to provide code examples and test the library.
 
-![Picture](https://github.com/Cteso/ModbusTCP.NET/blob/main/Screenshot.png)
+![Picture](https://github.com/Cteso/ModbusTCP.NET/blob/main/.github/images/Screenshot.png)
 
 ## This library supports the following function codes:
 
