@@ -1,14 +1,11 @@
 using System;
 using System.Collections;
-using System.Text;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
 using System.Threading;
 
-/// <summary>
-/// Modbus TCP common driver class. 
-/// </summary>
 namespace ModbusTCP
 {
     /// <summary>
@@ -245,7 +242,7 @@ namespace ModbusTCP
                 tcpSynCl = null;
                 tcpAsyCl = null;
             }
-            if(OnException != null) OnException(id, unit, function, exception);
+            if (OnException != null) OnException(id, unit, function, exception);
         }
 
         internal static UInt16 SwapUInt16(UInt16 inValue)
@@ -427,7 +424,7 @@ namespace ModbusTCP
         public void WriteMultipleCoils(ushort id, byte unit, ushort startAddress, ushort numBits, byte[] values)
         {
             ushort numBytes = Convert.ToUInt16(values.Length);
-            if(numBytes > 250 || numBits > 2000)
+            if (numBytes > 250 || numBits > 2000)
             {
                 CallException(id, unit, fctWriteMultipleCoils, excIllegalDataVal);
                 return;
@@ -762,7 +759,7 @@ namespace ModbusTCP
                 {
                     tcpSynCl.Send(write_data, 0, write_data.Length, SocketFlags.None);
                     int result = tcpSynCl.Receive(tcpSynClBuffer, 0, tcpSynClBuffer.Length, SocketFlags.None);
-                    
+
                     byte unit = tcpSynClBuffer[6];
                     byte function = tcpSynClBuffer[7];
                     byte[] data;
