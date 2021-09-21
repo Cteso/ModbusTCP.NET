@@ -43,6 +43,10 @@ Remember that a lot of Modbus clients use a watchdog telegram to make sure the m
 
 ## History
 
+Version 4.0 (21/09/2021)
+
+-   Ported to .NET Core
+
 Version 3.6 (26/03/2019)
 
 -   Fixed: Handle null reference in receive function block when cable is disconnected
