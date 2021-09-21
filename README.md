@@ -2,7 +2,7 @@
 
 .NET modbusTCP library
 
-This project is a fork of stephan1827's [Modbus TCP library](https://github.com/stephan1827/modbusTCP-DotNET) that has been ported to .NET Core
+This project is a fork of [stephan1827](https://github.com/stephan1827)'s [Modbus TCP library](https://github.com/stephan1827/modbusTCP-DotNET) that has been ported to .NET Core
 
 This class implements a Modbus TCP master driver. The code is written in C# but the DLL can
 be used in any other language.
