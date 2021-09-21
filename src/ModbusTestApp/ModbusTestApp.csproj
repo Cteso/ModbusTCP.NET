@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
     <ProjectType>Local</ProjectType>
-    <ApplicationIcon>App.ico</ApplicationIcon>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyOriginatorKeyFile>
@@ -60,10 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App.ico" />
+    <Content Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ModbusTCP\ModbusTCP\ModbusTCP.csproj" />
+    <ProjectReference Include="..\ModbusTCP\ModbusTCP.csproj" />
   </ItemGroup>
   <PropertyGroup />
   <ItemGroup>
