@@ -7,9 +7,13 @@ This project is a fork of stephan1827's [Modbus TCP library](https://github.com/
 This class implements a Modbus TCP master driver. The code is written in C# but the DLL can
 be used in any other language.
 
-![Picture](https://github.com/stephanstricker/modbusTCP/blob/master/Screenshot.png)
+## ModbusTCP Test app
 
-## It supports the following function codes:
+This repository also contains a sample winforms app to provide code examples and test the library.
+
+![Picture](https://github.com/Cteso/ModbusTCP.NET/blob/main/Screenshot.png)
+
+## This library supports the following function codes:
 
 -   Read coils
 -   Read discrete inputs
@@ -60,20 +64,4 @@ Version 3.3 (6/14/2013)
 
 Version 3.2
 
-First release
-Edit message
-
-Write a small message here explaining this change. (Optional)
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
-Press h to open a hovercard with more details.
+-   First release
