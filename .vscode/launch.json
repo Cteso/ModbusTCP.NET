@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/ModbusSampleCommon/bin/Debug/net5.0-windows/ModbusTester.dll",
+            "program": "${workspaceFolder}/src/ModbusTestApp/bin/Debug/net5.0-windows/ModbusTestApp.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/ModbusSampleCommon",
+            "cwd": "${workspaceFolder}/src/ModbusTestApp",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
