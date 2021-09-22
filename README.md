@@ -15,14 +15,14 @@ This repository also contains a sample winforms app to provide code examples and
 
 ## This library supports the following function codes:
 
--   Read coils
--   Read discrete inputs
--   Write single coil
--   Write multiple coils
--   Read holding register
--   Read input register
--   Write single register
--   Write multiple registers
+- Read coils
+- Read discrete inputs
+- Write single coil
+- Write multiple coils
+- Read holding register
+- Read input register
+- Write single register
+- Write multiple registers
 
 Background
 I will not explain how the Modbus protocol works in detail because there is plenty of information available online.
@@ -35,7 +35,7 @@ I will not explain how the Modbus protocol works in detail because there is plen
 
 All commands are sent in synchronous or asynchronous mode. If a value is accessed in synchronous mode, the program will stop and wait for the slave to respond. If the slave does not answer within a specified time, a timeout exception is called. The class uses multi-threading for both synchronous and asynchronous access. The class opens two communication channels for each slave. This is necessary because the synchronous thread has to wait for a command to finish. This would block the asynchronous connection. The class directory contains a help file (ModbusClassTCP\doc) with detailed information for every function.
 
-A sample application is included in the package that shows the basic features. It uses asynchronous mode for all function calls. The sample has some additional code to make the result handling more comfortable.
+A [sample application](https://github.com/Cteso/ModbusTCP.NET/tree/main/src/ModbusTestApp) is included in the repository that shows the basic features. It uses asynchronous mode for all function calls. The sample has some additional code to make the result handling more comfortable.
 
 ## Points of Interest
 
@@ -45,27 +45,27 @@ Remember that a lot of Modbus clients use a watchdog telegram to make sure the m
 
 Version 4.0 (21/09/2021)
 
--   Ported to .NET Core
+- Ported to .NET Core
 
 Version 3.6 (26/03/2019)
 
--   Fixed: Handle null reference in receive function block when cable is disconnected
+- Fixed: Handle null reference in receive function block when cable is disconnected
 
 Version 3.5 (12/06/2018)
 
--   Fixed: Exception is not triggered when synchonous channel is disabled
--   Fixed: WriteSingleRegister now fires exception excIllegalDataVal if number of bytes is not 2
+- Fixed: Exception is not triggered when synchonous channel is disabled
+- Fixed: WriteSingleRegister now fires exception excIllegalDataVal if number of bytes is not 2
 
 Version 3.4 (01/01/2015)
 
--   Added: Option to disable synchronous channel to limit number of connections to one
--   Added: Trigger exception if number of registers (250) or discrete values (2000) is exceeded
+- Added: Option to disable synchronous channel to limit number of connections to one
+- Added: Trigger exception if number of registers (250) or discrete values (2000) is exceeded
 
 Version 3.3 (6/14/2013)
 
--   Fixed: ID high and low byte swapped
--   Added: Modbus parameter UNIT added to function calls
+- Fixed: ID high and low byte swapped
+- Added: Modbus parameter UNIT added to function calls
 
 Version 3.2
 
--   First release
+- First release
